@@ -20,7 +20,10 @@ const options = {
 };
 
 const datetimePicker = flatpickr("#datetime-picker", options);
+
 const startButton = document.querySelector('[data-start]');
+startButton.disabled = true; 
+
 
 let intervalId = null;
 
@@ -60,6 +63,7 @@ function addLeadingZero(value) {
 startButton.addEventListener("click", () => {
   if (!intervalId) {
     intervalId = setInterval(updateTimer, 1000);
+    startButton.disabled = true; 
   }
 });
 
