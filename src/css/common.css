@@ -16,3 +16,23 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Task 02 - timer */
+.timer {
+  display: flex;
+  gap: 16px;
+  color: darkblue;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 24px;
+}
+
+.label {
+  font-size: 14px;
+}
+
